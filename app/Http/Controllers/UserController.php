@@ -24,7 +24,7 @@ class UserController extends BaseController
             // return $this->sendError('validation_error', $validator->errors()->first());
 
             // For testing in Browser.
-            return redirect()->route('login')->with('error', $validator->errors()->first());
+            return redirect()->route('loginPage')->with('error', $validator->errors()->first());
         }
 
         //Checking credentials using Auth.
